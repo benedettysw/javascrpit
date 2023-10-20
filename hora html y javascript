@@ -1,0 +1,11 @@
+ <h2>mi primer jaavascrpit</h2>
+
+    <button type="button" 
+    
+    onclick="document.getElementById('demo').innerHTML = Date()">
+
+
+    click para la hora </button>
+
+    <p id="demo"></p>
+    
