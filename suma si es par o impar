@@ -8,3 +8,40 @@ if (suma % 2 == 0 ){
 }else{
     alert(`el resulatdo es suma es ${suma} y el numero es impar`)
 }
+
+
+        <style>
+    .bene {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+</style>
+<div class="bene">
+        <input type="text" id="n1">
+        <br>
+        <input type="text" id="n2">
+        <br>
+        <button onclick="suma()">resuktado</button>
+        <p id="res"></p>
+
+</div>
+
+        <script>
+
+  function suma() {
+    let s = document.getElementById("n1").value;
+    let s2 = document.getElementById("n2").value;
+
+    let su = parseInt(s) + parseInt(s2);
+
+    if (su % 2 == 0){
+        document.getElementById("res").innerHTML = su + (": El resultado es par");
+    }else{
+        document.getElementById("res").innerHTML = su + (": El resultado es impar") ;
+    }
+
+
+  }
