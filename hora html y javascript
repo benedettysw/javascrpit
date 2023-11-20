@@ -1,11 +1,19 @@
- <h2>mi primer jaavascrpit</h2>
+  
+function mostrarHora() {
+  const fecha = new Date();
 
-    <button type="button" 
-    
-    onclick="document.getElementById('demo').innerHTML = Date()">
+  const hora = fecha.getHours()
+  const minutos = fecha.getMinutes()
+  const segundos = fecha.getSeconds()
 
+  setInterval(mostrarHora ,1000)
 
-    click para la hora </button>
+  const Tiempo = hora +": "+ minutos +" :"+ " "+segundos;
 
-    <p id="demo"></p>
+  document.getElementById('hora').innerHTML = Tiempo;
+
+  
+}
+mostrarHora()
+
     
