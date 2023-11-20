@@ -1,19 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
   
-function mostrarHora() {
-  const fecha = new Date();
+  <style>
 
-  const hora = fecha.getHours()
-  const minutos = fecha.getMinutes()
-  const segundos = fecha.getSeconds()
+    body{
+      background: black;
+      color: rgb(34, 255, 0);
 
-  setInterval(mostrarHora ,1000)
 
-  const Tiempo = hora +": "+ minutos +" :"+ " "+segundos;
+    }
+    .reloj{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50% , -50%);
 
-  document.getElementById('hora').innerHTML = Tiempo;
+    }
+    h1{
+      display: inline-block;
+      padding: 20px;
+      border: 2px solid #3498db;
+      border-radius: 50%;
+     
+    }
+  </style>
+
+
+  <div class="reloj">
+    <h1 id="hora"></h1>
+  </div>
+
+
+  <script>
+    function mostrarhora(){
+      const tiempo = new Date();
+
+      let hora = tiempo.getHours()
+      let minutos = tiempo.getMinutes()
+      let segundos = tiempo.getSeconds()
+
+      const reloj = hora+" :"+minutos+" :"+segundos ;
+
+      document.getElementById('hora').innerHTML = reloj;
+    }
+
+    setInterval(mostrarhora, 1000)
+
+    mostrarhora()
+  </script>
 
   
-}
-mostrarHora()
-
-    
+</body>
+</html>
