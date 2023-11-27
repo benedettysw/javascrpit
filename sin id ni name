@@ -1,0 +1,13 @@
+<!-- HTML -->
+<button>Hola</button>
+
+<!-- JavaScript -->
+<script>
+    // Seleccionar el primer botón en el documento
+    var boton = document.querySelector('button');
+
+    // Agregar un evento al botón
+    boton.addEventListener('click', function() {
+        alert('¡Hola!');
+    });
+</script>
