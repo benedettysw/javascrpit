@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .conta{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% , -50%);
+        }
+    </style>
+
+
+    <div class="conta">
+
+    </div>
+
+
+    <script>
+
+
+        let date = new Date()
+
+
+        let dia = date.getDate()
+
+        let mes = date.getMonth()
+
+
+        let años = date.getFullYear()
+
+        let todo = dia +" :"+ mes + ": " +años 
+
+
+
+
+        let nuevoele = document.createElement('em');
+
+
+
+        nuevoele.innerHTML = todo;
+
+
+        let divdehtml = document.querySelector('.conta')
+
+
+        divdehtml.appendChild(nuevoele)
+
