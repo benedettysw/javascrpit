@@ -11,3 +11,9 @@
         alert('¡Hola!');
     });
 </script>
+
+
+
+//funcion flecha
+    let happy = document.querySelector('button')
+    .addEventListener('click',  () => alert("hola mundo") )
